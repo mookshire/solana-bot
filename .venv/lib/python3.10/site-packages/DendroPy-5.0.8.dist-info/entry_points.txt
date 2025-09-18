@@ -1,0 +1,7 @@
+[console_scripts]
+dendropy-format = dendropy.application.dendropy_format:main
+sumlabels = dendropy.application.sumlabels:main_cli
+sumlabels.py = dendropy.application.sumlabels:main_cli
+sumtrees = dendropy.application.sumtrees:main
+sumtrees.py = dendropy.application.sumtrees:main
+

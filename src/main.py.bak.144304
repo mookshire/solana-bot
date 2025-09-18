@@ -1,0 +1,110 @@
+from __future__ import annotations
+import os, sys, time, subprocess, sqlite3, signal
+from pathlib import Path
+from datetime import datetime, timedelta
+
+# --- Setup ---
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+LOG  = DATA / "bot.log"
+ENV  = ROOT / "config" / ".env"
+
+DATA.mkdir(parents=True, exist_ok=True)
+
+# load .env manually (tiny parser)
+if ENV.exists():
+    for line in ENV.read_text().splitlines():
+        if not line.strip() or line.strip().startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip())
+
+INTERVAL_SEC     = int(os.getenv("BOT_INTERVAL_SEC", "60"))
+BUY_COOLDOWN_MIN = int(os.getenv("BUY_COOLDOWN_MIN", "60"))
+AUTO_ENABLE_BUY  = os.getenv("AUTO_ENABLE_BUY", "false").lower() == "true"
+
+BUY_MOD  = "src.buy_live_once"
+SELL_MOD = "src.sell_execute"
+DB_PATH  = ROOT / "data" / "trades.sqlite"
+COOLDOWN_FILE = DATA / "next_buy_at.txt"
+
+def log(msg: str) -> None:
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    line = f"[{ts}] {msg}\n"
+    sys.stdout.write(line); sys.stdout.flush()
+    try:
+        with LOG.open("a") as f:
+            f.write(line)
+    except Exception:
+        pass
+
+def read_next_buy_at() -> datetime:
+    if not COOLDOWN_FILE.exists():
+        return datetime.min
+    try:
+        return datetime.fromisoformat(COOLDOWN_FILE.read_text().strip())
+    except Exception:
+        return datetime.min
+
+def write_next_buy_at(dt: datetime) -> None:
+    COOLDOWN_FILE.write_text(dt.isoformat())
+
+def module_exists(module: str) -> bool:
+    path = ROOT / (module.replace(".", "/") + ".py")
+    return path.exists()
+
+def run_py(module: str, name: str) -> int:
+    if not module_exists(module):
+        log(f"{name}: module not found at {(ROOT / (module.replace('.', '/') + '.py'))}")
+        return 127
+    try:
+        log(f"{name}: starting…")
+        rc = subprocess.call([sys.executable, "-m", module], cwd=str(ROOT))
+        log(f"{name}: exit code {rc}")
+        return rc
+    except Exception as e:
+        log(f"{name}: crashed: {e}")
+        return 1
+
+def should_auto_buy() -> bool:
+    if not AUTO_ENABLE_BUY:
+        return False
+    next_at = read_next_buy_at()
+    return datetime.now() >= next_at
+
+def mark_buy_cooldown():
+    write_next_buy_at(datetime.now() + timedelta(minutes=BUY_COOLDOWN_MIN))
+
+def graceful_exit(signum, frame):
+    log(f"signal {signum} received, shutting down loop")
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, graceful_exit)
+signal.signal(signal.SIGTERM, graceful_exit)
+
+def main():
+    log("=== bot main loop started ===")
+    log(f"AUTO_ENABLE_BUY={AUTO_ENABLE_BUY}, INTERVAL_SEC={INTERVAL_SEC}, BUY_COOLDOWN_MIN={BUY_COOLDOWN_MIN}")
+
+    if not DB_PATH.exists():
+        log(f"warning: DB not found at {DB_PATH}")
+
+    while True:
+        loop_started = datetime.now()
+
+        # 1) SELL every loop
+        run_py(SELL_MOD, "SELL")
+
+        # 2) BUY on cooldown if enabled
+        if should_auto_buy():
+            run_py(BUY_MOD, "BUY")
+            mark_buy_cooldown()
+
+        # 3) sleep
+        elapsed = (datetime.now() - loop_started).total_seconds()
+        sleep_s = max(1, INTERVAL_SEC - int(elapsed))
+        log(f"sleeping {sleep_s}s")
+        time.sleep(sleep_s)
+
+if __name__ == "__main__":
+    main()

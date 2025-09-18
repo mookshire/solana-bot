@@ -1,0 +1,6 @@
+[0m[0;4mNEXT                       [0m[0m[0;4m LEFT         [0m[0m[0;4m LAST                       [0m[0m[0;4m PASSED      [0m[0m[0;4m UNIT                               [0m[0m[0;4m ACTIVATES                            [0m
+Sat 2025-08-16 19:04:12 ADT 25s left      Sat 2025-08-16 19:02:12 ADT 1min 34s ago solana-bot-watchdog@mookshire.timer solana-bot-watchdog@mookshire.service
+Sat 2025-08-16 23:59:00 ADT 4h 55min left n/a                         n/a          solana-bot-pnl@mookshire.timer      solana-bot-pnl@mookshire.service
+Sun 2025-08-17 00:15:00 ADT 5h 11min left n/a                         n/a          solana-bot-backup@mookshire.timer   solana-bot-backup@mookshire.service
+
+[0;1;39m3 timers listed.[0m

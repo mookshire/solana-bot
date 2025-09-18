@@ -1,0 +1,6 @@
+solana
+solders
+requests
+tenacity
+python-dotenv
+pydantic

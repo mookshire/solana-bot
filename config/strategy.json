@@ -1,0 +1,23 @@
+{
+  "pair": "SOL/USDC",
+  "buy_rule": {
+    "sma_days": 7,
+    "discount_pct": 5.0,
+    "require_trend_non_negative_days": 3
+  },
+  "sell_rule": {
+    "take_profit_pct": 7.0,
+    "stop_loss_pct": 3.0
+  },
+  "sizing": {
+    "max_position_pct": 25.0,
+    "min_usdc_reserve_pct": 50.0,
+    "test_mode_fixed_usdc": 10.0
+  },
+  "limits": {
+    "max_daily_trades": 3,
+    "cooldown_minutes": 60,
+    "daily_loss_cap_pct": 5.0,
+    "volatility_cap_pct": 3.0
+  }
+}

@@ -1,0 +1,4 @@
+fee_bps,slip_bps,equity_multiple,max_drawdown_pct,trades,win_rate_pct
+0.0,0.0,1.199212,21.44,74,54.05
+5.0,5.0,0.0,187.02,74,0.0
+7.0,5.0,5e-06,189.99,74,0.0

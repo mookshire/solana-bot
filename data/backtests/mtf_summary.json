@@ -1,0 +1,21 @@
+{
+  "symbol": "SOLUSDT",
+  "interval": "15m",
+  "bias_interval": "1h",
+  "bars": 1000,
+  "trades": 7,
+  "wins": 5,
+  "losses": 2,
+  "win_rate_pct": 71.429,
+  "equity_multiple": 0.96137,
+  "last_signal": "HOLD",
+  "last_price": 184.2,
+  "last_time": "2025-08-20T17:44:59.999000",
+  "RSI_BUY_LT": 55.0,
+  "RSI_SELL_GT": 61.0,
+  "VOL_BUY_X": 0.85,
+  "VOL_SELL_X": 1.25,
+  "BULL_ONLY": 1,
+  "fee_bps": 12.5,
+  "slip_bps": 12.5
+}

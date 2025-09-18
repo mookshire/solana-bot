@@ -1,0 +1,109 @@
+
+import os, json, csv, importlib, sys
+from pathlib import Path
+from itertools import product
+
+DATA = Path("data/SOLUSDT_15m_5000.json")
+OUTDIR = Path("data/backtests"); OUTDIR.mkdir(parents=True, exist_ok=True)
+OUTCSV = OUTDIR / "sweep_SOLUSDT_15m_fast.csv"
+
+# modest grid (256 combos)
+BB_K_vals          = [2.0, 2.2, 2.4, 2.6]
+RSI_BUY_MAX_vals   = [55, 60]
+RSI_SELL_MIN_vals  = [60, 65]
+VOL_MULT_vals      = [0.85, 1.00]
+EMA_TREND_N_vals   = [100, 200]
+REQUIRE_TREND_vals = [0, 1]
+BB_COOLDOWN_vals   = [0, 2]
+
+def need_cache():
+    if not DATA.exists():
+        print(f"ERROR: {DATA} missing. Run a 15m backtest once to create it:")
+        print("  export BB_SYMBOL=SOLUSDT BB_INTERVAL=15m BB_LIMIT=5000; unset DATA_FILE; python3 -m src.backtest_hybrid")
+        sys.exit(2)
+
+def run_once(env, data):
+    import os, json, importlib
+    for k,v in env.items(): os.environ[k]=str(v)
+    import src.backtest_hybrid as bh
+    importlib.reload(bh)
+    # build cached DF
+    df = bh._to_dataframe(json.loads(Path(data).read_text()))
+    # force no-network: make backtest use the cached DF
+    bh.fetch_klines = lambda *a, **kw: df
+    try:
+        fn, name, ac = bh._auto_find_entry()
+    except Exception:
+        return {"error":"no_entry"}
+    try:
+        res = fn() if ac == 0 else fn(df)
+    except Exception as e:
+        return {"error": f"{type(e).__name__}:{e}"}
+    row = {"entry_func": name}
+    if isinstance(res, dict): row.update(res)
+    else: row["result"] = str(res)
+    return row
+
+def main():
+
+    need_cache()
+    combos = list(product(
+        BB_K_vals, RSI_BUY_MAX_vals, RSI_SELL_MIN_vals, VOL_MULT_vals,
+        EMA_TREND_N_vals, REQUIRE_TREND_vals, BB_COOLDOWN_vals
+    ))
+    print(f"Sweeping {len(combos)} combos on cached 15m data...")
+
+    rows = []
+    for i,(k,rbu, rse, volx, ema, req, cd) in enumerate(combos,1):
+        env = {
+            "BB_SYMBOL":"SOLUSDT","BB_INTERVAL":"15m","BB_LIMIT":"5000",
+            "BB_K":k,
+            "RSI_BUY_MAX":rbu, "RSI_SELL_MIN":rse,
+            "VOL_MA_N":20, "VOL_MULT":volx,
+            "EMA_TREND_N":ema, "REQUIRE_TREND":req,
+            "BB_COOLDOWN_BARS":cd,
+            "FEE_BPS":12.5, "SLIP_BPS":12.5,
+        }
+        row = run_once(env, DATA)
+        row.update({
+            "BB_K":k, "RSI_BUY_MAX":rbu, "RSI_SELL_MIN":rse,
+            "VOL_MULT":volx, "EMA_TREND_N":ema, "REQUIRE_TREND":req,
+            "BB_COOLDOWN_BARS":cd
+        })
+        rows.append(row)
+        if i % 20 == 0 or i == len(combos):
+            print(f"{i}/{len(combos)} done...")
+
+    # sort: equity desc, dd asc, trades desc
+    def f(x, default): 
+        try: return float(x)
+        except: return default
+    rows.sort(key=lambda r: (
+        -f(r.get("equity_multiple") or r.get("equity"), -1e9),
+         f(r.get("max_drawdown_pct"), 1e9),
+        -f(r.get("trades"), -1e9)
+    ))
+
+    # write CSV
+    keys = sorted({k for r in rows for k in r.keys()})
+    with OUTCSV.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=keys)
+        w.writeheader(); w.writerows(rows)
+
+    print("\nTop 10 preview:")
+    for r in rows[:10]:
+        print({
+            "equity_multiple": r.get("equity_multiple") or r.get("equity"),
+            "max_dd%": r.get("max_drawdown_pct"),
+            "trades": r.get("trades"),
+            "BB_K": r.get("BB_K"),
+            "RSI_BUY_MAX": r.get("RSI_BUY_MAX"),
+            "RSI_SELL_MIN": r.get("RSI_SELL_MIN"),
+            "VOL_MULT": r.get("VOL_MULT"),
+            "EMA_TREND_N": r.get("EMA_TREND_N"),
+            "REQ_TREND": r.get("REQUIRE_TREND"),
+            "COOLDOWN": r.get("BB_COOLDOWN_BARS"),
+        })
+    print(f"\nWrote {OUTCSV}")
+if __name__ == "__main__":
+    main()

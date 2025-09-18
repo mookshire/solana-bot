@@ -1,0 +1,10 @@
+buy_time,buy_px,sell_time,sell_px,gross_ret_pct,net_ret_pct,equity_mult_after,buy_reasons,sell_reasons
+242,203.28,243,204.14,0.4231,0.2231,1.002231,ema_fast>ema_slow;macd_cross_up,close>BB_up
+271,202.67,287,197.82,-2.3931,-2.5931,0.976242,ema_fast>ema_slow;close<BB_low;rsi<40.0,macd_cross_dn
+289,195.51,322,189.01,-3.3246,-3.5246,0.941833,ema_fast>ema_slow;close<BB_low;rsi<40.0,ema_fast<ema_slow;macd_cross_dn
+582,193.36,586,194.64,0.662,0.462,0.946184,ema_fast>ema_slow;macd_cross_up,close>BB_up
+600,192.12,650,180.57,-6.0119,-6.2119,0.887409,ema_fast>ema_slow;rsi<40.0,ema_fast<ema_slow
+919,185.91,921,189.1,1.7159,1.5159,0.900861,ema_fast>ema_slow;close<BB_low,close>BB_up
+945,184.61,966,186.3,0.9154,0.7154,0.907306,ema_fast>ema_slow;close<BB_low;rsi<40.0,close>BB_up
+969,182.92,970,183.17,0.1367,-0.0633,0.906731,ema_fast>ema_slow;rsi<40.0,macd_cross_dn
+972,181.65,991,180.29,-0.7487,-0.9487,0.898129,ema_fast>ema_slow;close<BB_low;rsi<40.0,ema_fast<ema_slow

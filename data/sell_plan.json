@@ -1,0 +1,55 @@
+{
+  "generated_at": 1755450033,
+  "user": "B5DHi7ozB87SaT4DChHgbxWJLZws7Edmbdts52SzAmvV",
+  "decision": "SELL",
+  "reason": "FORCED_TEST",
+  "sell_qty_sol": "0.006746476",
+  "entry_usdc_per_sol": "185.281916",
+  "tp_bps": 100,
+  "sl_bps": 300,
+  "tp_target_usdc": "1.2625",
+  "sl_target_usdc": "1.2125",
+  "quoted_out_usdc": "1.3039",
+  "price_impact_pct": "0.019476169760331171414527500",
+  "slippage_bps": 25,
+  "quote_raw": {
+    "inputMint": "So11111111111111111111111111111111111111112",
+    "inAmount": "6746476",
+    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "outAmount": "1303934",
+    "otherAmountThreshold": "1300675",
+    "swapMode": "ExactIn",
+    "slippageBps": 25,
+    "platformFee": null,
+    "priceImpactPct": "0.000194761697603311714145275",
+    "routePlan": [
+      {
+        "swapInfo": {
+          "ammKey": "2SgUGxYDczrB6wUzXHPJH65pNhWkEzNMEx3km4xTYUTC",
+          "label": "Invariant",
+          "inputMint": "So11111111111111111111111111111111111111112",
+          "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "inAmount": "6746476",
+          "outAmount": "1303934",
+          "feeAmount": "675",
+          "feeMint": "So11111111111111111111111111111111111111112"
+        },
+        "percent": 100,
+        "bps": 10000
+      }
+    ],
+    "contextSlot": 360699619,
+    "timeTaken": 0.001526621,
+    "swapUsdValue": "1.3041880058700171223975663628",
+    "simplerRouteUsed": false,
+    "mostReliableAmmsQuoteReport": {
+      "info": {
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "1303176",
+        "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "1301831"
+      }
+    },
+    "useIncurredSlippageForQuoting": null,
+    "otherRoutePlans": null,
+    "aggregatorVersion": null
+  }
+}

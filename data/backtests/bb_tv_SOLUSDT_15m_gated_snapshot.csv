@@ -1,0 +1,2 @@
+BB_K,BB_PERIOD,avg_trade_ret_pct,bb_k,bb_period,buyhold_gated_multiple,equity_multiple,interval,losses,max_drawdown_pct,months,note,open_position_ret_pct,rows,symbol,trades,trend_max,vol_min,win_rate_pct,wins
+3.0,16,-1.1662,3.0,16,1.0888296078251003,0.939861,15m,3,10.01,1,TV-style BB mean reversion,,2880,SOLUSDT,5,0.2,0.01,40.0,2

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ME=$(whoami)
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
+case "${1:-}" in
+  start)    sudo systemctl start  solana-bot.service ;;
+  stop)     sudo systemctl stop   solana-bot.service ;;
+  restart)  sudo systemctl restart solana-bot.service ;;
+  status)   systemctl --no-pager status solana-bot.service ;;
+  logs)     journalctl -u solana-bot -n 120 -f ;;
+  pnl)      python -m src.pnl ;;
+  last)     python -m src.status ;;
+  backup)   sudo systemctl start "solana-bot-backup@${ME}.service" ;;
+  notify)   python -m src.notify_trade ;;
+  watchdog) sudo systemctl start "solana-bot-watchdog@${ME}.service" ;;
+  timers)   systemctl list-timers "solana-bot-*@${ME}.timer" --all ;;
+  *) echo "Usage: $0 {start|stop|restart|status|logs|pnl|last|backup|notify|watchdog|timers}"; exit 1;;
+esac

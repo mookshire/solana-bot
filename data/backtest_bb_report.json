@@ -1,0 +1,20 @@
+{
+  "symbol": "SOLUSDT",
+  "interval": "15m",
+  "period": 20,
+  "k": 2.6,
+  "ema_n": 200,
+  "chop_pct": 0.015,
+  "cooldown_bars": 2,
+  "fee_bps_per_side": 12.5,
+  "slip_bps_per_side": 12.5,
+  "bars": 1000,
+  "trades": 1,
+  "wins": 1,
+  "losses": 0,
+  "win_rate_pct": 100.0,
+  "avg_trade_ret_pct": 1.0563,
+  "equity_multiple": 1.010563,
+  "max_drawdown_pct": 0.0,
+  "open_position_ret_pct": null
+}

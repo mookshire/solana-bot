@@ -1,0 +1,65 @@
+from __future__ import annotations
+import os, sys, time, json, subprocess, urllib.request
+from pathlib import Path
+
+ALERT_THRESHOLD = int(os.environ.get("WATCHDOG_ALERT_THRESHOLD", "3"))   # restarts
+ALERT_WINDOW_S  = int(os.environ.get("WATCHDOG_ALERT_WINDOW_S", "600"))  # 10 minutes
+
+def notify(text: str) -> None:
+    url = os.getenv("WEBHOOK_URL", "").strip()
+    if not url:
+        print("[watchdog] no WEBHOOK_URL configured; skipping alert")
+        return
+    try:
+        data = json.dumps({"text": text}).encode()
+        req  = urllib.request.Request(url, data=data, headers={"Content-Type":"application/json"})
+        urllib.request.urlopen(req, timeout=8).read()
+        print("[watchdog] alert sent")
+    except Exception as e:
+        print(f"[watchdog] alert failed: {e}")
+
+def record_restart(state_file: Path) -> int:
+    now = int(time.time())
+    try:
+        state = json.loads(state_file.read_text())
+    except Exception:
+        state = {"restarts": []}
+    # prune outside window, add new
+    cutoff = now - ALERT_WINDOW_S
+    recent = [t for t in state.get("restarts", []) if isinstance(t, int) and t >= cutoff]
+    recent.append(now)
+    state["restarts"] = recent
+    state_file.write_text(json.dumps(state))
+    return len(recent)
+
+def main():
+    user = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("SUDO_USER") or os.environ.get("USER") or "root"
+    root = Path(f"/home/{user}/solana-bot")
+    hb   = root / "data" / "heartbeat.txt"
+    state_file = root / "data" / "watchdog_state.json"
+    interval = int(os.environ.get("BOT_INTERVAL_SEC", "60"))
+    threshold = max(180, 5 * interval)  # stale if > 3m or 5 loops
+    now = time.time()
+
+    if not hb.exists():
+        print(f"[watchdog] heartbeat missing at {hb}; restarting service")
+        count = record_restart(state_file)
+        if count >= ALERT_THRESHOLD:
+            notify(f"⚠️ watchdog: {count} restarts within {ALERT_WINDOW_S//60}m on host {os.uname().nodename}")
+        subprocess.run(["systemctl", "restart", "solana-bot.service"])
+        return 0
+
+    age = now - hb.stat().st_mtime
+    if age > threshold:
+        print(f"[watchdog] stale heartbeat age={int(age)}s (> {threshold}s); restarting service")
+        count = record_restart(state_file)
+        if count >= ALERT_THRESHOLD:
+            notify(f"⚠️ watchdog: {count} restarts within {ALERT_WINDOW_S//60}m on host {os.uname().nodename}")
+        subprocess.run(["systemctl", "restart", "solana-bot.service"])
+        return 0
+
+    print(f"[watchdog] healthy (age={int(age)}s <= {threshold}s)")
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())

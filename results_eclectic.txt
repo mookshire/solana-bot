@@ -1,0 +1,41 @@
+{
+  "symbol": "SOLUSDT",
+  "interval": "15m",
+  "bars": 5000,
+  "EMA": [
+    50,
+    200
+  ],
+  "RSI_N": 14,
+  "MACD": [
+    12,
+    26,
+    9
+  ],
+  "STOCH": [
+    14,
+    3
+  ],
+  "BB": [
+    20,
+    2.0
+  ],
+  "VOL": [
+    0.9,
+    1.3
+  ],
+  "CONFIRM": [
+    2,
+    2
+  ],
+  "BULL_ONLY": 1,
+  "fees_bps": 5.0,
+  "slip_bps": 5.0,
+  "trades": 5,
+  "wins": 3,
+  "losses": 2,
+  "win_rate_pct": 60.0,
+  "equity_multiple": 0.904568,
+  "last_price": 180.76,
+  "last_time": "999"
+}

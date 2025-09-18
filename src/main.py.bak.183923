@@ -1,0 +1,141 @@
+from __future__ import annotations
+import os, sys, time, subprocess, sqlite3, signal
+from pathlib import Path
+from datetime import datetime, timedelta, timezone
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+LOG  = DATA / "bot.log"
+ENV  = ROOT / "config" / ".env"
+DATA.mkdir(parents=True, exist_ok=True)
+
+# .env loader
+if ENV.exists():
+    for line in ENV.read_text().splitlines():
+        if not line.strip() or line.strip().startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip())
+
+INTERVAL_SEC       = int(os.getenv("BOT_INTERVAL_SEC", "60"))
+BUY_COOLDOWN_MIN   = int(os.getenv("BUY_COOLDOWN_MIN", "60"))
+SELL_COOLDOWN_MIN  = int(os.getenv("SELL_COOLDOWN_MIN", "180"))
+AUTO_ENABLE_BUY    = os.getenv("AUTO_ENABLE_BUY", "false").lower() == "true"
+AUTO_ENABLE_SELL   = os.getenv("AUTO_ENABLE_SELL", "true").lower() == "true"
+MAX_DAILY_BUYS     = int(os.getenv("MAX_DAILY_BUYS",  "9999"))
+MAX_DAILY_SELLS    = int(os.getenv("MAX_DAILY_SELLS", "9999"))
+
+BUY_MOD = "src.buy_guarded"
+SELL_MOD = "src.sell_guarded"
+DB_PATH  = ROOT / "data" / "trades.sqlite"
+COOLDOWN_BUY  = DATA / "next_buy_at.txt"
+COOLDOWN_SELL = DATA / "next_sell_at.txt"
+
+def log(msg: str) -> None:
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    line = f"[{ts}] {msg}\n"
+    sys.stdout.write(line); sys.stdout.flush()
+    try:
+        with LOG.open("a") as f:
+            f.write(line)
+    except Exception:
+        pass
+
+def _read_dt(p: Path) -> datetime:
+    if not p.exists(): return datetime.min
+    try: return datetime.fromisoformat(p.read_text().strip())
+    except Exception: return datetime.min
+
+def _write_dt(p: Path, dt: datetime) -> None:
+    p.write_text(dt.isoformat())
+
+def module_exists(module: str) -> bool:
+    return (ROOT / (module.replace(".", "/") + ".py")).exists()
+
+def run_py(module: str, name: str) -> int:
+    if not module_exists(module):
+        log(f"{name}: module not found at {(ROOT / (module.replace('.', '/') + '.py'))}")
+        return 127
+    try:
+        log(f"{name}: starting…")
+        rc = subprocess.call([sys.executable, "-m", module], cwd=str(ROOT))
+        log(f"{name}: exit code {rc}")
+        return rc
+    except Exception as e:
+        log(f"{name}: crashed: {e}")
+        return 1
+
+def _count_trades_today(side_prefix: str) -> int:
+    """Count trades since UTC midnight with non-null tx_sig."""
+    if not DB_PATH.exists(): return 0
+    try:
+        midnight_utc = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+        since = int(midnight_utc.timestamp())
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+        cur.execute(
+            "SELECT COUNT(*) FROM trades WHERE side LIKE ? AND tx_sig IS NOT NULL AND ts >= ?",
+            (f"{side_prefix}%", since),
+        )
+        (cnt,) = cur.fetchone() or (0,)
+        conn.close()
+        return int(cnt or 0)
+    except Exception:
+        return 0
+
+def main():
+    log("=== bot main loop started ===")
+    log(f"AUTO_ENABLE_BUY={AUTO_ENABLE_BUY}, AUTO_ENABLE_SELL={AUTO_ENABLE_SELL}, "
+        f"INTERVAL_SEC={INTERVAL_SEC}, BUY_COOLDOWN_MIN={BUY_COOLDOWN_MIN}, SELL_COOLDOWN_MIN={SELL_COOLDOWN_MIN}, "
+        f"MAX_DAILY_BUYS={MAX_DAILY_BUYS}, MAX_DAILY_SELLS={MAX_DAILY_SELLS}")
+
+    if not DB_PATH.exists():
+        log(f"warning: DB not found at {DB_PATH}")
+
+    while True:
+        loop_started = datetime.now()
+
+        # SELL path (with cooldown + daily cap)
+        if AUTO_ENABLE_SELL:
+            if datetime.now() >= _read_dt(COOLDOWN_SELL):
+                sells_today = _count_trades_today("SELL")
+                if sells_today >= MAX_DAILY_SELLS:
+                    log(f"SELL: daily cap reached ({sells_today}/{MAX_DAILY_SELLS}); skipping")
+                else:
+                    rc = run_py(SELL_MOD, "SELL")
+                    if rc == 0:
+                        _write_dt(COOLDOWN_SELL, datetime.now() + timedelta(minutes=SELL_COOLDOWN_MIN))
+                    subprocess.call([sys.executable, "-m", "src.notify_trade"], cwd=str(ROOT))
+                    else:
+                        log(f"SELL: cooldown not set (rc={rc})")
+            else:
+                until = _read_dt(COOLDOWN_SELL).strftime("%H:%M")
+                log(f"SELL: cooldown active until {until} (AUTO_ENABLE_SELL=true)")
+        else:
+            log("SELL: skipped (AUTO_ENABLE_SELL=false)")
+
+        # BUY path (with cooldown + daily cap)
+        if AUTO_ENABLE_BUY:
+            if datetime.now() >= _read_dt(COOLDOWN_BUY):
+                buys_today = _count_trades_today("BUY")
+                if buys_today >= MAX_DAILY_BUYS:
+                    log(f"BUY: daily cap reached ({buys_today}/{MAX_DAILY_BUYS}); skipping")
+                else:
+                    rc = run_py(BUY_MOD, "BUY")
+                    _write_dt(COOLDOWN_BUY, datetime.now() + timedelta(minutes=BUY_COOLDOWN_MIN))
+            subprocess.call([sys.executable, "-m", "src.notify_trade"], cwd=str(ROOT))
+            # else: silent until cooldown expires
+
+        elapsed = (datetime.now() - loop_started).total_seconds()
+        sleep_s = max(1, INTERVAL_SEC - int(elapsed))
+        log(f"sleeping {sleep_s}s")
+        time.sleep(sleep_s)
+
+if __name__ == "__main__":
+    # Graceful exit on SIGINT/SIGTERM
+    def _graceful_exit(signum, frame):
+        log(f"signal {signum} received, shutting down loop")
+        sys.exit(0)
+    signal.signal(signal.SIGINT, _graceful_exit)
+    signal.signal(signal.SIGTERM, _graceful_exit)
+    main()

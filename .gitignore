@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+
+# Backup files
+*.bak
+*.backup.*
+
+# OS junk
+.DS_Store
+Thumbs.db

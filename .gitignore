@@ -1,14 +1,14 @@
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.so
 
-# Virtual environment
+# Virtual environments
 .venv/
 
-# Backup files
+# Backups
 *.bak
 *.backup.*
 

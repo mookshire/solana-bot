@@ -1,5 +1,5 @@
 {
-  "symbol": "SOLUSDT",
+  "symbol": "SOLUSDC",
   "interval": "15m",
   "n_candles": 1800,
   "ema_fast": 20,

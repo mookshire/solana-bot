@@ -1418,3 +1418,655 @@
 [2025-09-23 11:24:03] sleeping 60s
 [2025-09-23 11:25:03] SELL: cooldown active until 11:30 (AUTO_ENABLE_SELL=true)
 [2025-09-23 11:25:03] sleeping 60s
+[2025-09-23 11:26:03] SELL: cooldown active until 11:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:26:03] sleeping 60s
+[2025-09-23 11:27:03] SELL: cooldown active until 11:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:27:03] sleeping 60s
+[2025-09-23 11:28:03] SELL: cooldown active until 11:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:28:03] sleeping 60s
+[2025-09-23 11:29:03] SELL: cooldown active until 11:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:29:03] sleeping 60s
+[2025-09-23 11:30:03] SELL: starting…
+2025-09-23 11:30:05 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4824 USDC @ 219.7353 USDC/SOL
+[2025-09-23 11:30:06] SELL: exit code 0
+[2025-09-23 11:30:06] sleeping 58s
+[2025-09-23 11:31:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:31:04] sleeping 60s
+[2025-09-23 11:32:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:32:04] sleeping 60s
+[2025-09-23 11:33:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:33:04] sleeping 60s
+[2025-09-23 11:34:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:34:04] sleeping 60s
+[2025-09-23 11:35:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:35:04] sleeping 60s
+[2025-09-23 11:36:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:36:04] sleeping 60s
+[2025-09-23 11:37:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:37:04] sleeping 60s
+[2025-09-23 11:38:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:38:04] sleeping 60s
+[2025-09-23 11:39:04] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:39:04] sleeping 60s
+[2025-09-23 11:40:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:40:05] sleeping 60s
+[2025-09-23 11:41:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:41:05] sleeping 60s
+[2025-09-23 11:42:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:42:05] sleeping 60s
+[2025-09-23 11:43:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:43:05] sleeping 60s
+[2025-09-23 11:44:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:44:05] sleeping 60s
+[2025-09-23 11:45:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:45:05] sleeping 60s
+[2025-09-23 11:46:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:46:05] sleeping 60s
+[2025-09-23 11:47:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:47:05] sleeping 60s
+[2025-09-23 11:48:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:48:05] sleeping 60s
+[2025-09-23 11:49:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:49:05] sleeping 60s
+[2025-09-23 11:50:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:50:05] sleeping 60s
+[2025-09-23 11:51:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:51:05] sleeping 60s
+[2025-09-23 11:52:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:52:05] sleeping 60s
+[2025-09-23 11:53:05] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:53:05] sleeping 60s
+[2025-09-23 11:54:06] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:54:06] sleeping 60s
+[2025-09-23 11:55:06] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:55:06] sleeping 60s
+[2025-09-23 11:56:06] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:56:06] sleeping 60s
+[2025-09-23 11:57:06] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:57:06] sleeping 60s
+[2025-09-23 11:58:06] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:58:06] sleeping 60s
+[2025-09-23 11:59:06] SELL: cooldown active until 12:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 11:59:06] sleeping 60s
+[2025-09-23 12:00:06] SELL: starting…
+2025-09-23 12:00:08 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4706 USDC @ 217.9739 USDC/SOL
+[2025-09-23 12:00:08] SELL: exit code 0
+[2025-09-23 12:00:09] sleeping 58s
+[2025-09-23 12:01:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:01:07] sleeping 60s
+[2025-09-23 12:02:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:02:07] sleeping 60s
+[2025-09-23 12:03:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:03:07] sleeping 60s
+[2025-09-23 12:04:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:04:07] sleeping 60s
+[2025-09-23 12:05:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:05:07] sleeping 60s
+[2025-09-23 12:06:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:06:07] sleeping 60s
+[2025-09-23 12:07:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:07:07] sleeping 60s
+[2025-09-23 12:08:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:08:07] sleeping 60s
+[2025-09-23 12:09:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:09:07] sleeping 60s
+[2025-09-23 12:10:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:10:07] sleeping 60s
+[2025-09-23 12:11:07] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:11:08] sleeping 60s
+[2025-09-23 12:12:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:12:08] sleeping 60s
+[2025-09-23 12:13:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:13:08] sleeping 60s
+[2025-09-23 12:14:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:14:08] sleeping 60s
+[2025-09-23 12:15:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:15:08] sleeping 60s
+[2025-09-23 12:16:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:16:08] sleeping 60s
+[2025-09-23 12:17:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:17:08] sleeping 60s
+[2025-09-23 12:18:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:18:08] sleeping 60s
+[2025-09-23 12:19:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:19:08] sleeping 60s
+[2025-09-23 12:20:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:20:08] sleeping 60s
+[2025-09-23 12:21:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:21:08] sleeping 60s
+[2025-09-23 12:22:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:22:08] sleeping 60s
+[2025-09-23 12:23:08] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:23:08] sleeping 60s
+[2025-09-23 12:24:09] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:24:09] sleeping 60s
+[2025-09-23 12:25:09] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:25:09] sleeping 60s
+[2025-09-23 12:26:09] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:26:09] sleeping 60s
+[2025-09-23 12:27:09] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:27:09] sleeping 60s
+[2025-09-23 12:28:09] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:28:09] sleeping 60s
+[2025-09-23 12:29:09] SELL: cooldown active until 12:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:29:09] sleeping 60s
+[2025-09-23 12:30:09] SELL: starting…
+2025-09-23 12:30:11 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4825 USDC @ 219.7402 USDC/SOL
+[2025-09-23 12:30:12] SELL: exit code 0
+[2025-09-23 12:30:12] sleeping 58s
+[2025-09-23 12:31:10] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:31:10] sleeping 60s
+[2025-09-23 12:32:10] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:32:10] sleeping 60s
+[2025-09-23 12:33:10] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:33:10] sleeping 60s
+[2025-09-23 12:34:10] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:34:10] sleeping 60s
+[2025-09-23 12:35:10] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:35:10] sleeping 60s
+[2025-09-23 12:36:10] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:36:10] sleeping 60s
+[2025-09-23 12:37:10] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:37:10] sleeping 60s
+[2025-09-23 12:38:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:38:11] sleeping 60s
+[2025-09-23 12:39:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:39:11] sleeping 60s
+[2025-09-23 12:40:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:40:11] sleeping 60s
+[2025-09-23 12:41:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:41:11] sleeping 60s
+[2025-09-23 12:42:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:42:11] sleeping 60s
+[2025-09-23 12:43:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:43:11] sleeping 60s
+[2025-09-23 12:44:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:44:11] sleeping 60s
+[2025-09-23 12:45:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:45:11] sleeping 60s
+[2025-09-23 12:46:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:46:11] sleeping 60s
+[2025-09-23 12:47:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:47:11] sleeping 60s
+[2025-09-23 12:48:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:48:11] sleeping 60s
+[2025-09-23 12:49:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:49:11] sleeping 60s
+[2025-09-23 12:50:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:50:11] sleeping 60s
+[2025-09-23 12:51:11] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:51:11] sleeping 60s
+[2025-09-23 12:52:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:52:12] sleeping 60s
+[2025-09-23 12:53:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:53:12] sleeping 60s
+[2025-09-23 12:54:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:54:12] sleeping 60s
+[2025-09-23 12:55:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:55:12] sleeping 60s
+[2025-09-23 12:56:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:56:12] sleeping 60s
+[2025-09-23 12:57:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:57:12] sleeping 60s
+[2025-09-23 12:58:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:58:12] sleeping 60s
+[2025-09-23 12:59:12] SELL: cooldown active until 13:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 12:59:12] sleeping 60s
+[2025-09-23 13:00:12] SELL: starting…
+2025-09-23 13:00:14 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4808 USDC @ 219.4936 USDC/SOL
+[2025-09-23 13:00:15] SELL: exit code 0
+[2025-09-23 13:00:15] sleeping 58s
+[2025-09-23 13:01:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:01:13] sleeping 60s
+[2025-09-23 13:02:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:02:13] sleeping 60s
+[2025-09-23 13:03:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:03:13] sleeping 60s
+[2025-09-23 13:04:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:04:13] sleeping 60s
+[2025-09-23 13:05:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:05:13] sleeping 60s
+[2025-09-23 13:06:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:06:13] sleeping 60s
+[2025-09-23 13:07:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:07:13] sleeping 60s
+[2025-09-23 13:08:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:08:13] sleeping 60s
+[2025-09-23 13:09:13] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:09:13] sleeping 60s
+[2025-09-23 13:10:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:10:14] sleeping 60s
+[2025-09-23 13:11:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:11:14] sleeping 60s
+[2025-09-23 13:12:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:12:14] sleeping 60s
+[2025-09-23 13:13:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:13:14] sleeping 60s
+[2025-09-23 13:14:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:14:14] sleeping 60s
+[2025-09-23 13:15:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:15:14] sleeping 60s
+[2025-09-23 13:16:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:16:14] sleeping 60s
+[2025-09-23 13:17:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:17:14] sleeping 60s
+[2025-09-23 13:18:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:18:14] sleeping 60s
+[2025-09-23 13:19:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:19:14] sleeping 60s
+[2025-09-23 13:20:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:20:14] sleeping 60s
+[2025-09-23 13:21:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:21:14] sleeping 60s
+[2025-09-23 13:22:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:22:14] sleeping 60s
+[2025-09-23 13:23:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:23:14] sleeping 60s
+[2025-09-23 13:24:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:24:14] sleeping 60s
+[2025-09-23 13:25:14] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:25:14] sleeping 60s
+[2025-09-23 13:26:15] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:26:15] sleeping 60s
+[2025-09-23 13:27:15] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:27:15] sleeping 60s
+[2025-09-23 13:28:15] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:28:15] sleeping 60s
+[2025-09-23 13:29:15] SELL: cooldown active until 13:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:29:15] sleeping 60s
+[2025-09-23 13:30:15] SELL: starting…
+2025-09-23 13:30:17 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4814 USDC @ 219.5803 USDC/SOL
+[2025-09-23 13:30:17] SELL: exit code 0
+[2025-09-23 13:30:18] sleeping 58s
+[2025-09-23 13:31:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:31:16] sleeping 60s
+[2025-09-23 13:32:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:32:16] sleeping 60s
+[2025-09-23 13:33:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:33:16] sleeping 60s
+[2025-09-23 13:34:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:34:16] sleeping 60s
+[2025-09-23 13:35:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:35:16] sleeping 60s
+[2025-09-23 13:36:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:36:16] sleeping 60s
+[2025-09-23 13:37:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:37:16] sleeping 60s
+[2025-09-23 13:38:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:38:16] sleeping 60s
+[2025-09-23 13:39:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:39:16] sleeping 60s
+[2025-09-23 13:40:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:40:16] sleeping 60s
+[2025-09-23 13:41:16] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:41:16] sleeping 60s
+[2025-09-23 13:42:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:42:17] sleeping 60s
+[2025-09-23 13:43:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:43:17] sleeping 60s
+[2025-09-23 13:44:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:44:17] sleeping 60s
+[2025-09-23 13:45:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:45:17] sleeping 60s
+[2025-09-23 13:46:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:46:17] sleeping 60s
+[2025-09-23 13:47:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:47:17] sleeping 60s
+[2025-09-23 13:48:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:48:17] sleeping 60s
+[2025-09-23 13:49:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:49:17] sleeping 60s
+[2025-09-23 13:50:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:50:17] sleeping 60s
+[2025-09-23 13:51:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:51:17] sleeping 60s
+[2025-09-23 13:52:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:52:17] sleeping 60s
+[2025-09-23 13:53:17] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:53:17] sleeping 60s
+[2025-09-23 13:54:18] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:54:18] sleeping 60s
+[2025-09-23 13:55:18] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:55:18] sleeping 60s
+[2025-09-23 13:56:18] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:56:18] sleeping 60s
+[2025-09-23 13:57:18] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:57:18] sleeping 60s
+[2025-09-23 13:58:18] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:58:18] sleeping 60s
+[2025-09-23 13:59:18] SELL: cooldown active until 14:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 13:59:18] sleeping 60s
+[2025-09-23 14:00:18] SELL: starting…
+2025-09-23 14:00:20 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4877 USDC @ 220.5129 USDC/SOL
+[2025-09-23 14:00:20] SELL: exit code 0
+[2025-09-23 14:00:21] sleeping 58s
+[2025-09-23 14:01:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:01:19] sleeping 60s
+[2025-09-23 14:02:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:02:19] sleeping 60s
+[2025-09-23 14:03:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:03:19] sleeping 60s
+[2025-09-23 14:04:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:04:19] sleeping 60s
+[2025-09-23 14:05:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:05:19] sleeping 60s
+[2025-09-23 14:06:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:06:19] sleeping 60s
+[2025-09-23 14:07:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:07:19] sleeping 60s
+[2025-09-23 14:08:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:08:19] sleeping 60s
+[2025-09-23 14:09:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:09:19] sleeping 60s
+[2025-09-23 14:10:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:10:19] sleeping 60s
+[2025-09-23 14:11:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:11:19] sleeping 60s
+[2025-09-23 14:12:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:12:19] sleeping 60s
+[2025-09-23 14:13:19] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:13:19] sleeping 60s
+[2025-09-23 14:14:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:14:20] sleeping 60s
+[2025-09-23 14:15:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:15:20] sleeping 60s
+[2025-09-23 14:16:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:16:20] sleeping 60s
+[2025-09-23 14:17:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:17:20] sleeping 60s
+[2025-09-23 14:18:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:18:20] sleeping 60s
+[2025-09-23 14:19:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:19:20] sleeping 60s
+[2025-09-23 14:20:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:20:20] sleeping 60s
+[2025-09-23 14:21:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:21:20] sleeping 60s
+[2025-09-23 14:22:20] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:22:20] BUY: starting…
+[2025-09-23 14:22:21] BUY: exit code 0
+[2025-09-23 14:22:22] sleeping 59s
+[2025-09-23 14:23:21] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:23:21] sleeping 60s
+[2025-09-23 14:24:21] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:24:21] sleeping 60s
+[2025-09-23 14:25:21] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:25:21] sleeping 60s
+[2025-09-23 14:26:21] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:26:21] sleeping 60s
+[2025-09-23 14:27:21] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:27:21] sleeping 60s
+[2025-09-23 14:28:21] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:28:21] sleeping 60s
+[2025-09-23 14:29:21] SELL: cooldown active until 14:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:29:21] sleeping 60s
+[2025-09-23 14:30:21] SELL: starting…
+2025-09-23 14:30:23 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4699 USDC @ 217.8720 USDC/SOL
+[2025-09-23 14:30:23] SELL: exit code 0
+[2025-09-23 14:30:24] sleeping 58s
+[2025-09-23 14:31:22] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:31:22] sleeping 60s
+[2025-09-23 14:32:22] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:32:22] sleeping 60s
+[2025-09-23 14:33:22] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:33:22] sleeping 60s
+[2025-09-23 14:34:22] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:34:22] sleeping 60s
+[2025-09-23 14:35:22] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:35:22] sleeping 60s
+[2025-09-23 14:36:22] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:36:22] sleeping 60s
+[2025-09-23 14:37:22] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:37:22] sleeping 60s
+[2025-09-23 14:38:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:38:23] sleeping 60s
+[2025-09-23 14:39:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:39:23] sleeping 60s
+[2025-09-23 14:40:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:40:23] sleeping 60s
+[2025-09-23 14:41:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:41:23] sleeping 60s
+[2025-09-23 14:42:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:42:23] sleeping 60s
+[2025-09-23 14:43:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:43:23] sleeping 60s
+[2025-09-23 14:44:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:44:23] sleeping 60s
+[2025-09-23 14:45:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:45:23] sleeping 60s
+[2025-09-23 14:46:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:46:23] sleeping 60s
+[2025-09-23 14:47:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:47:23] sleeping 60s
+[2025-09-23 14:48:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:48:23] sleeping 60s
+[2025-09-23 14:49:23] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:49:23] sleeping 60s
+[2025-09-23 14:50:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:50:24] sleeping 60s
+[2025-09-23 14:51:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:51:24] sleeping 60s
+[2025-09-23 14:52:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:52:24] sleeping 60s
+[2025-09-23 14:53:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:53:24] sleeping 60s
+[2025-09-23 14:54:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:54:24] sleeping 60s
+[2025-09-23 14:55:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:55:24] sleeping 60s
+[2025-09-23 14:56:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:56:24] sleeping 60s
+[2025-09-23 14:57:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:57:24] sleeping 60s
+[2025-09-23 14:58:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:58:24] sleeping 60s
+[2025-09-23 14:59:24] SELL: cooldown active until 15:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 14:59:24] sleeping 60s
+[2025-09-23 15:00:24] SELL: starting…
+2025-09-23 15:00:26 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4631 USDC @ 216.8655 USDC/SOL
+[2025-09-23 15:00:27] SELL: exit code 0
+[2025-09-23 15:00:27] sleeping 58s
+[2025-09-23 15:01:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:01:25] sleeping 60s
+[2025-09-23 15:02:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:02:25] sleeping 60s
+[2025-09-23 15:03:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:03:25] sleeping 60s
+[2025-09-23 15:04:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:04:25] sleeping 60s
+[2025-09-23 15:05:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:05:25] sleeping 60s
+[2025-09-23 15:06:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:06:25] sleeping 60s
+[2025-09-23 15:07:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:07:25] sleeping 60s
+[2025-09-23 15:08:25] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:08:25] sleeping 60s
+[2025-09-23 15:09:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:09:26] sleeping 60s
+[2025-09-23 15:10:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:10:26] sleeping 60s
+[2025-09-23 15:11:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:11:26] sleeping 60s
+[2025-09-23 15:12:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:12:26] sleeping 60s
+[2025-09-23 15:13:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:13:26] sleeping 60s
+[2025-09-23 15:14:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:14:26] sleeping 60s
+[2025-09-23 15:15:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:15:26] sleeping 60s
+[2025-09-23 15:16:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:16:26] sleeping 60s
+[2025-09-23 15:17:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:17:26] sleeping 60s
+[2025-09-23 15:18:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:18:26] sleeping 60s
+[2025-09-23 15:19:26] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:19:26] sleeping 60s
+[2025-09-23 15:20:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:20:27] sleeping 60s
+[2025-09-23 15:21:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:21:27] sleeping 60s
+[2025-09-23 15:22:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:22:27] sleeping 60s
+[2025-09-23 15:23:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:23:27] sleeping 60s
+[2025-09-23 15:24:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:24:27] sleeping 60s
+[2025-09-23 15:25:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:25:27] sleeping 60s
+[2025-09-23 15:26:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:26:27] sleeping 60s
+[2025-09-23 15:27:27] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:27:27] sleeping 60s
+[2025-09-23 15:28:28] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:28:28] sleeping 60s
+[2025-09-23 15:29:28] SELL: cooldown active until 15:30 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:29:28] sleeping 60s
+[2025-09-23 15:30:28] SELL: starting…
+2025-09-23 15:30:30 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4613 USDC @ 216.6063 USDC/SOL
+[2025-09-23 15:30:30] SELL: exit code 0
+[2025-09-23 15:30:31] sleeping 57s
+[2025-09-23 15:31:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:31:28] sleeping 60s
+[2025-09-23 15:32:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:32:28] sleeping 60s
+[2025-09-23 15:33:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:33:28] sleeping 60s
+[2025-09-23 15:34:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:34:28] sleeping 60s
+[2025-09-23 15:35:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:35:28] sleeping 60s
+[2025-09-23 15:36:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:36:28] sleeping 60s
+[2025-09-23 15:37:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:37:28] sleeping 60s
+[2025-09-23 15:38:28] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:38:28] sleeping 60s
+[2025-09-23 15:39:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:39:29] sleeping 60s
+[2025-09-23 15:40:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:40:29] sleeping 60s
+[2025-09-23 15:41:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:41:29] sleeping 60s
+[2025-09-23 15:42:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:42:29] sleeping 60s
+[2025-09-23 15:43:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:43:29] sleeping 60s
+[2025-09-23 15:44:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:44:29] sleeping 60s
+[2025-09-23 15:45:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:45:29] sleeping 60s
+[2025-09-23 15:46:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:46:29] sleeping 60s
+[2025-09-23 15:47:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:47:29] sleeping 60s
+[2025-09-23 15:48:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:48:29] sleeping 60s
+[2025-09-23 15:49:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:49:29] sleeping 60s
+[2025-09-23 15:50:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:50:29] sleeping 60s
+[2025-09-23 15:51:29] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:51:29] sleeping 60s
+[2025-09-23 15:52:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:52:30] sleeping 60s
+[2025-09-23 15:53:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:53:30] sleeping 60s
+[2025-09-23 15:54:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:54:30] sleeping 60s
+[2025-09-23 15:55:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:55:30] sleeping 60s
+[2025-09-23 15:56:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:56:30] sleeping 60s
+[2025-09-23 15:57:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:57:30] sleeping 60s
+[2025-09-23 15:58:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:58:30] sleeping 60s
+[2025-09-23 15:59:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 15:59:30] sleeping 60s
+[2025-09-23 16:00:30] SELL: cooldown active until 16:00 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:00:30] sleeping 60s
+[2025-09-23 16:01:30] SELL: starting…
+2025-09-23 16:01:32 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4571 USDC @ 215.9776 USDC/SOL
+[2025-09-23 16:01:32] SELL: exit code 0
+[2025-09-23 16:01:33] sleeping 58s
+[2025-09-23 16:02:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:02:31] sleeping 60s
+[2025-09-23 16:03:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:03:31] sleeping 60s
+[2025-09-23 16:04:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:04:31] sleeping 60s
+[2025-09-23 16:05:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:05:31] sleeping 60s
+[2025-09-23 16:06:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:06:31] sleeping 60s
+[2025-09-23 16:07:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:07:31] sleeping 60s
+[2025-09-23 16:08:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:08:31] sleeping 60s
+[2025-09-23 16:09:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:09:31] sleeping 60s
+[2025-09-23 16:10:31] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:10:31] sleeping 60s
+[2025-09-23 16:11:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:11:32] sleeping 60s
+[2025-09-23 16:12:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:12:32] sleeping 60s
+[2025-09-23 16:13:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:13:32] sleeping 60s
+[2025-09-23 16:14:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:14:32] sleeping 60s
+[2025-09-23 16:15:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:15:32] sleeping 60s
+[2025-09-23 16:16:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:16:32] sleeping 60s
+[2025-09-23 16:17:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:17:32] sleeping 60s
+[2025-09-23 16:18:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:18:32] sleeping 60s
+[2025-09-23 16:19:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:19:32] sleeping 60s
+[2025-09-23 16:20:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:20:32] sleeping 60s
+[2025-09-23 16:21:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:21:32] sleeping 60s
+[2025-09-23 16:22:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:22:32] sleeping 60s
+[2025-09-23 16:23:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:23:32] sleeping 60s
+[2025-09-23 16:24:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:24:32] sleeping 60s
+[2025-09-23 16:25:32] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:25:32] sleeping 60s
+[2025-09-23 16:26:33] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:26:33] sleeping 60s
+[2025-09-23 16:27:33] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:27:33] sleeping 60s
+[2025-09-23 16:28:33] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:28:33] sleeping 60s
+[2025-09-23 16:29:33] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:29:33] sleeping 60s
+[2025-09-23 16:30:33] SELL: cooldown active until 16:31 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:30:33] sleeping 60s
+[2025-09-23 16:31:33] SELL: starting…
+2025-09-23 16:31:35 [sell_execute] Recorded SELL: 0.006746476 SOL -> 1.4582 USDC @ 216.1420 USDC/SOL
+[2025-09-23 16:31:35] SELL: exit code 0
+[2025-09-23 16:31:36] sleeping 58s
+[2025-09-23 16:32:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:32:34] sleeping 60s
+[2025-09-23 16:33:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:33:34] sleeping 60s
+[2025-09-23 16:34:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:34:34] sleeping 60s
+[2025-09-23 16:35:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:35:34] sleeping 60s
+[2025-09-23 16:36:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:36:34] sleeping 60s
+[2025-09-23 16:37:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:37:34] sleeping 60s
+[2025-09-23 16:38:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:38:34] sleeping 60s
+[2025-09-23 16:39:34] SELL: cooldown active until 17:01 (AUTO_ENABLE_SELL=true)
+[2025-09-23 16:39:34] sleeping 60s

@@ -1,0 +1,20 @@
+{
+  "symbol": "SOLUSDC",
+  "interval": "15m",
+  "n_candles": 1800,
+  "ema_fast": 20,
+  "ema_slow": 55,
+  "atr_period": 14,
+  "sl_atr_mult": 1.5,
+  "tp_atr_mult": 2.5,
+  "risk_pct": 0.0075,
+  "fees_bps": 10.0,
+  "trades": 64,
+  "wins": 26,
+  "win_rate": 40.625,
+  "equity_start": 10000.0,
+  "equity_end": 10218.445225094567,
+  "pnl_total": 218.44522509456692,
+  "return_pct": 2.1844522509456787,
+  "max_drawdown_pct": 4.765226251800407
+}

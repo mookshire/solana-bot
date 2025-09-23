@@ -1,0 +1,12 @@
+{
+  "phase": "4",
+  "module": "risk_controls",
+  "entry_price": 118.808045,
+  "last_atr": 1.181957,
+  "stop": 117.03511,
+  "take": 122.353917,
+  "risk_pct": 0.005,
+  "units_sol": 28.201814,
+  "notional_usd": 3350.6,
+  "notes": "Synthetic smoketest only; integration with backtest_hybrid.py comes next."
+}

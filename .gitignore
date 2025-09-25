@@ -16,3 +16,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 solana-bot/
+data/*.sqlite
+data/backups/
+data/*.gz
+data/bot.log*
+data/*_sell_at.txt
+data/*_buy_at.txt
+data/heartbeat.txt
